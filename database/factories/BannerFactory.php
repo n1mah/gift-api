@@ -17,7 +17,14 @@ class BannerFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title'=>fake()->title,
+            'description'=>fake()->sentence,
+            'color-from'=>"#E50914",
+            'color-main'=>"#1A1E29",
+            'color-to'=>"#132D46",
+            'link'=>fake()->url,
+            'logo-name'=>"netflix",
+            'logo'=>"netflix.jpg",
         ];
     }
 }
