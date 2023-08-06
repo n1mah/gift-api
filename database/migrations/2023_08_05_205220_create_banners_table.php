@@ -16,10 +16,10 @@ return new class extends Migration
             $table->string("title",127);
             $table->string("description",127);
             $table->string("link",1024);
-            $table->string("color-from",63);
-            $table->string("color-main",63);
-            $table->string("color-to",63);
-            $table->string("logo-name",127);
+            $table->string("color_from",63);
+            $table->string("color_main",63);
+            $table->string("color_to",63);
+            $table->string("logo_name",127);
             $table->string("logo",1024);
             $table->timestamps();
         });

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\v1;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreBannerRequest;
 use App\Http\Requests\UpdateBannerRequest;
+use App\Http\Resources\BannerResource;
 use App\Models\Banner;
 
 class BannerController extends Controller
@@ -12,9 +13,9 @@ class BannerController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(): \Illuminate\Database\Eloquent\Collection
+    public function index(): \Illuminate\Http\Resources\Json\AnonymousResourceCollection
     {
-        return Banner::all();
+        return BannerResource::collection(Banner::all());
     }
 
     /**
@@ -38,7 +39,7 @@ class BannerController extends Controller
      */
     public function show(Banner $banner)
     {
-        //
+        return BannerResource::make($banner);
     }
 
     /**
