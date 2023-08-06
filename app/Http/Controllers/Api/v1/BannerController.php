@@ -56,7 +56,8 @@ class BannerController extends Controller
      */
     public function update(UpdateBannerRequest $request, Banner $banner)
     {
-        //
+        $banner->update($request->validated());
+        return BannerResource::make($banner);
     }
 
     /**
