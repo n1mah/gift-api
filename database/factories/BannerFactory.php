@@ -19,12 +19,12 @@ class BannerFactory extends Factory
         return [
             'title'=>fake()->title,
             'description'=>fake()->sentence,
-            'color-from'=>"#E50914",
-            'color-main'=>"#1A1E29",
-            'color-to'=>"#132D46",
+            'color_from'=>"#E50914",
+            'color_main'=>"#1A1E29",
+            'color_to'=>"#132D46",
             'link'=>fake()->url,
-            'logo-name'=>"netflix",
-            'logo'=>"netflix.jpg",
+            'logo_name'=>"netflix-text-logo",
+            'logo'=>"https://nimaheidari.storage.iran.liara.space/images/netflix-text-logo.png",
         ];
     }
 }

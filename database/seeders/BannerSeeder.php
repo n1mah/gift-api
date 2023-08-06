@@ -13,6 +13,6 @@ class BannerSeeder extends Seeder
      */
     public function run(): void
     {
-        Banner::factory(1)->create();
+        Banner::factory(2)->create();
     }
 }
