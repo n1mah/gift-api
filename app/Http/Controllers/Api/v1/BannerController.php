@@ -31,7 +31,8 @@ class BannerController extends Controller
      */
     public function store(StoreBannerRequest $request)
     {
-        //
+        $banner= Banner::create($request->validated());
+        return BannerResource::make($banner);
     }
 
     /**
