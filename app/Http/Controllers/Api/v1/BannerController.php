@@ -54,7 +54,7 @@ class BannerController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateBannerRequest $request, Banner $banner)
+    public function update(UpdateBannerRequest $request, Banner $banner): BannerResource
     {
         $banner->update($request->validated());
         return BannerResource::make($banner);
@@ -63,8 +63,9 @@ class BannerController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Banner $banner)
+    public function destroy(Banner $banner): \Illuminate\Http\Resources\Json\AnonymousResourceCollection
     {
-        //
+        $banner->delete();
+        return BannerResource::collection(Banner::all());
     }
 }
