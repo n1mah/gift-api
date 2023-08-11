@@ -1,8 +1,8 @@
 <?php
 
 use App\Http\Controllers\Api\v1\BannerController;
+use App\Http\Controllers\Api\v1\BrandController;
 use App\Http\Controllers\Api\v1\DataBannerController;
-use App\Http\Controllers\BrandController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
