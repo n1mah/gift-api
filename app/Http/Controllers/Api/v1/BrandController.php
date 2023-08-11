@@ -57,7 +57,8 @@ class BrandController extends Controller
      */
     public function update(UpdateBrandRequest $request, Brand $brand)
     {
-        //
+        $brand->update($request->validated());
+        return BrandResource::make($brand);
     }
 
     /**
