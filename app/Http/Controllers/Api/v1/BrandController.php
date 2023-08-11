@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\v1;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreBrandRequest;
 use App\Http\Requests\UpdateBrandRequest;
+use App\Http\Resources\BrandResource;
 use App\Models\Brand;
 
 class BrandController extends Controller
@@ -14,7 +15,7 @@ class BrandController extends Controller
      */
     public function index()
     {
-        //
+        BrandResource::collection(Brand::all());
     }
 
     /**
@@ -38,7 +39,8 @@ class BrandController extends Controller
      */
     public function show(Brand $brand)
     {
-        //
+        BrandResource::make($brand);
+
     }
 
     /**
