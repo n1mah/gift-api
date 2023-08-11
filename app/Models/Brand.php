@@ -15,6 +15,7 @@ class Brand extends Model
         return $this->belongsTo(Category::class);
     }
     protected $fillable = [
+        'category_id',
         'title',
         'title_en',
         'description',
