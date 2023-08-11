@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -22,6 +23,26 @@ return new class extends Migration
             $table->string("logo_filter",1024);
             $table->timestamps();
         });
+        DB::table('brands')->insert(
+            [
+                'category_id' => '1',
+                'title' => 'اسپاتیفای',
+                'title_en' => 'spotify',
+                'description' => 'spotify stream Music ...',
+                'logo' => 'https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png',
+                'logo_filter' => 'https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png',
+            ],
+        );
+        DB::table('brands')->insert(
+            [
+                'category_id' => '1',
+                'title' => 'سووندکلود',
+                'title_en' => 'soundcloud',
+                'description' => 'soundcloud stream Music ...',
+                'logo' => 'https://nimaheidari.storage.iran.liara.space/images/soundcloud-logo.png',
+                'logo_filter' => 'https://nimaheidari.storage.iran.liara.space/images/soundcloud-logo.png',
+            ],
+        );
     }
 
     /**
