@@ -15,7 +15,7 @@ class BrandController extends Controller
      */
     public function index()
     {
-        BrandResource::collection(Brand::all());
+       return BrandResource::collection(Brand::all());
     }
 
     /**
@@ -40,7 +40,7 @@ class BrandController extends Controller
      */
     public function show(Brand $brand)
     {
-        BrandResource::make($brand);
+      return  BrandResource::make($brand);
 
     }
 
@@ -67,6 +67,6 @@ class BrandController extends Controller
     public function destroy(Brand $brand)
     {
         $brand->delete();
-        BrandResource::collection(Brand::all());
+       return BrandResource::collection(Brand::all());
     }
 }
