@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\v1\BannerController;
 use App\Http\Controllers\Api\v1\DataBannerController;
+use App\Http\Controllers\BrandController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::prefix('v1')->group(function (){
    Route::apiResource('/banner',BannerController::class);
+   Route::apiResource('/brand',BrandController::class);
    Route::patch('/banner/{banner}/data',DataBannerController::class);
 });
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
