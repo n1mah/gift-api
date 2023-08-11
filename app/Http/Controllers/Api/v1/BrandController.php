@@ -31,7 +31,8 @@ class BrandController extends Controller
      */
     public function store(StoreBrandRequest $request)
     {
-        //
+        $brand= Brand::create($request->validated());
+        return BrandResource::make($brand);
     }
 
     /**
