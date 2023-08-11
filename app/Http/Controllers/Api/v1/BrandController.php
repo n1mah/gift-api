@@ -66,6 +66,7 @@ class BrandController extends Controller
      */
     public function destroy(Brand $brand)
     {
-        //
+        $brand->delete();
+        BrandResource::collection(Brand::all());
     }
 }
