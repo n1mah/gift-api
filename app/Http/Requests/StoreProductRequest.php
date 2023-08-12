@@ -24,6 +24,7 @@ class StoreProductRequest extends FormRequest
         return [
             'title'=>"required|string|max:127",
             'brand_id'=>"required|exists:brands,id",
+            'category_id'=>"required|exists:categories,id",
             'title_en'=>"required|string|max:127",
             'description'=>"required|string|max:127",
             'period'=>"required|string|max:127",
