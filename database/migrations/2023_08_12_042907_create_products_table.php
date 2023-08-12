@@ -20,7 +20,7 @@ return new class extends Migration
             $table->text("description");
             $table->string("period",127);
             $table->string("period_title",127);
-            $table->decimal("period_title",20);
+            $table->decimal("price",20,0);
             $table->timestamps();
         });
     }
