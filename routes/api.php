@@ -24,7 +24,7 @@ Route::prefix('v1')->group(function (){
    Route::apiResource('/category',CategoryController::class);
    Route::apiResource('/product',ProductController::class);
    Route::patch('/banner/{banner}/data',DataBannerController::class);
-   Route::get('/products/{category}',\App\Http\Controllers\api\v1\ProductsCategoryController::class);
+   Route::get('/category/{category}',\App\Http\Controllers\api\v1\ProductsCategoryController::class);
 });
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

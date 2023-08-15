@@ -19,7 +19,8 @@ return new class extends Migration
             $table->timestamps();
         });
         DB::table('categories')->insert(
-            ['title' => 'موزیک', 'title_en' => 'stream Music'],
+            ['title' => 'موزیک', 'title_en' => 'stream Music',
+                'created_at'=>time(),'updated_at'=>time()],
         );
     }
 
