@@ -12,15 +12,17 @@ class ProductResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'brand_id'=>$this->brand_id,
-            'brand'=>BrandResource::make(Brand::where('id',$this->brand_id)->first()),
-            'category_id'=>$this->category_id,
+//            'brand_id'=>$this->brand_id,
+//            'category_id'=>$this->category_id,
+            'product_id'=>$this->id,
             'title'=>$this->title,
             'title_en'=>$this->title_en,
-            'description'=>$this->description,
-            'period'=>$this->period,
+//            'description'=>$this->description,
+//            'period'=>$this->period,
             'period_title'=>$this->period_title,
             'price'=>$this->price,
+            'brand'=>BrandResource::make(Brand::where('id',$this->brand_id)->first())
+
         ];
     }
 }
