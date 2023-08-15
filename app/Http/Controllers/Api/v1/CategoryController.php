@@ -13,7 +13,7 @@ class CategoryController extends Controller
 
     public function index()
     {
-       return (Category::all());
+       return CategoryResource::collection(Category::all());
     }
 
     public function store(StoreCategoryRequest $request)
