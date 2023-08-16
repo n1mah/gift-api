@@ -7,7 +7,7 @@ use App\Http\Controllers\Api\v1\DataBannerController;
 use App\Http\Controllers\Api\v1\PController;
 use App\Http\Controllers\Api\v1\PeriodController;
 use App\Http\Controllers\Api\v1\ProductController;
-use App\Http\Controllers\api\v1\ProductsCategoryController;
+use App\Http\Controllers\Api\v1\ProductsCategoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
