@@ -10,6 +10,6 @@ class ProductsCategoryController extends Controller
 {
     public function index(Request $request, Category $category)
     {
-        return [];
+        return ["Ok"];
     }
 }
