@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\v1\BannerController;
 use App\Http\Controllers\Api\v1\BrandController;
 use App\Http\Controllers\Api\v1\CategoryController;
 use App\Http\Controllers\Api\v1\DataBannerController;
+use App\Http\Controllers\Api\v1\PController;
 use App\Http\Controllers\Api\v1\PeriodController;
 use App\Http\Controllers\Api\v1\ProductController;
 use Illuminate\Http\Request;
@@ -27,7 +28,7 @@ Route::prefix('v1')->group(function (){
    Route::patch('/banner/{banner}/data',DataBannerController::class);
 //   Route::get('/products/category/{category}',[\App\Http\Controllers\api\v1\ProductsCategoryController::class,'index']);
    Route::get('/periods', [PeriodController::class, 'index']);
-   Route::get('/test/{category}', [\App\Http\Controllers\api\v1\PController::class, 'index']);
+   Route::get('/test/{category}', [PController::class, 'index']);
 //   Route::get('/periods/{category}',\App\Http\Controllers\api\v1\ProductsCategoryController::class);
 });
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
