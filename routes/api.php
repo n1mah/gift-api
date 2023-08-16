@@ -25,8 +25,9 @@ Route::prefix('v1')->group(function (){
    Route::apiResource('/category',CategoryController::class);
    Route::apiResource('/product',ProductController::class);
    Route::patch('/banner/{banner}/data',DataBannerController::class);
-   Route::get('/products/category/{category}',[\App\Http\Controllers\api\v1\ProductsCategoryController::class,'index']);
+//   Route::get('/products/category/{category}',[\App\Http\Controllers\api\v1\ProductsCategoryController::class,'index']);
    Route::get('/periods', [PeriodController::class, 'index']);
+   Route::get('/test/{category}', [\App\Http\Controllers\api\v1\PController::class, 'index']);
 //   Route::get('/periods/{category}',\App\Http\Controllers\api\v1\ProductsCategoryController::class);
 });
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

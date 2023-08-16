@@ -1,0 +1,279 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "موزیک",
+            "title_en": "stream Music",
+            "products": [
+                {
+                    "brand_id": 1,
+                    "brand": {
+                        "category_id": 1,
+                        "title": "اسپاتیفای",
+                        "title_en": "spotify",
+                        "description": "spotify stream Music ...",
+                        "logo": "https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png",
+                        "logo_filter": "https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png"
+                    },
+                    "category_id": 1,
+                    "title": "گیفت کارت اسپاتیفای",
+                    "title_en": "gift spotify",
+                    "description": "lorem ...",
+                    "period": "3",
+                    "period_title": "سه ماهه",
+                    "price": "200"
+                },
+                {
+                    "brand_id": 2,
+                    "brand": {
+                        "category_id": 1,
+                        "title": "سووندکلود",
+                        "title_en": "soundcloud",
+                        "description": "soundcloud stream Music ...",
+                        "logo": "https://nimaheidari.storage.iran.liara.space/images/soundcloud-logo.png",
+                        "logo_filter": "https://nimaheidari.storage.iran.liara.space/images/soundcloud-logo.png"
+                    },
+                    "category_id": 1,
+                    "title": "گیفت کارت سووندکلود",
+                    "title_en": "gift soundcloud",
+                    "description": "lorem ...",
+                    "period": "4",
+                    "period_title": "چهار ماهه",
+                    "price": "100"
+                },
+                {
+                    "brand_id": 1,
+                    "brand": {
+                        "category_id": 1,
+                        "title": "اسپاتیفای",
+                        "title_en": "spotify",
+                        "description": "spotify stream Music ...",
+                        "logo": "https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png",
+                        "logo_filter": "https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png"
+                    },
+                    "category_id": 1,
+                    "title": "گیفت کارت اسپاتیفای",
+                    "title_en": "gift spotify",
+                    "description": "lorem ...",
+                    "period": "6",
+                    "period_title": "6 ماهه",
+                    "price": "320"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+,{
+"data": [
+{
+"id": 1,
+"title": "موزیک",
+"title_en": "stream Music",
+"products": [
+{
+"brand_id": 1,
+"brand": {
+"category_id": 1,
+"title": "اسپاتیفای",
+"title_en": "spotify",
+"description": "spotify stream Music ...",
+"logo": "https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png",
+"logo_filter": "https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png"
+},
+"category_id": 1,
+"title": "گیفت کارت اسپاتیفای",
+"title_en": "gift spotify",
+"description": "lorem ...",
+"period": "3",
+"period_title": "سه ماهه",
+"price": "200"
+},
+{
+"brand_id": 2,
+"brand": {
+"category_id": 1,
+"title": "سووندکلود",
+"title_en": "soundcloud",
+"description": "soundcloud stream Music ...",
+"logo": "https://nimaheidari.storage.iran.liara.space/images/soundcloud-logo.png",
+"logo_filter": "https://nimaheidari.storage.iran.liara.space/images/soundcloud-logo.png"
+},
+"category_id": 1,
+"title": "گیفت کارت سووندکلود",
+"title_en": "gift soundcloud",
+"description": "lorem ...",
+"period": "4",
+"period_title": "چهار ماهه",
+"price": "100"
+},
+{
+"brand_id": 1,
+"brand": {
+"category_id": 1,
+"title": "اسپاتیفای",
+"title_en": "spotify",
+"description": "spotify stream Music ...",
+"logo": "https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png",
+"logo_filter": "https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png"
+},
+"category_id": 1,
+"title": "گیفت کارت اسپاتیفای",
+"title_en": "gift spotify",
+"description": "lorem ...",
+"period": "6",
+"period_title": "6 ماهه",
+"price": "320"
+}
+]
+}
+]
+}
+
+
+,
+//brand
+{
+"data": [
+{
+"category_id": 1,
+"title": "اسپاتیفای",
+"title_en": "spotify",
+"description": "spotify stream Music ...",
+"logo": "https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png",
+"logo_filter": "https://nimaheidari.storage.iran.liara.space/images/spotify-logo.png"
+},
+{
+"category_id": 1,
+"title": "سووندکلود",
+"title_en": "soundcloud",
+"description": "soundcloud stream Music ...",
+"logo": "https://nimaheidari.storage.iran.liara.space/images/soundcloud-logo.png",
+"logo_filter": "https://nimaheidari.storage.iran.liara.space/images/soundcloud-logo.png"
+}
+]
+}
+
+
+,
+
+
+//Category
+[
+{
+"id": 1,
+"title": "موزیک",
+"title_en": "stream Music",
+"created_at": null,
+"updated_at": null
+},
+{
+"id": 2,
+"title": "فیلم و سریال",
+"title_en": "stream Video",
+"created_at": "2023-08-12T07:08:54.000000Z",
+"updated_at": "2023-08-12T07:08:54.000000Z"
+},
+{
+"id": 3,
+"title": "آموزشی",
+"title_en": "Eduction",
+"created_at": "2023-08-12T07:10:50.000000Z",
+"updated_at": "2023-08-12T07:10:50.000000Z"
+},
+{
+"id": 4,
+"title": "ابزار",
+"title_en": "tools",
+"created_at": "2023-08-12T07:11:01.000000Z",
+"updated_at": "2023-08-12T07:11:01.000000Z"
+}
+]
+
+
+,
+//Product
+
+{
+"data": [
+{
+"brand_id": 1,
+"category_id": 1,
+"title": "گیفت کارت اسپاتیفای",
+"title_en": "gift spotify",
+"description": "lorem ...",
+"period": "3",
+"period_title": "سه ماهه",
+"price": "200"
+},
+{
+"brand_id": 2,
+"category_id": 1,
+"title": "گیفت کارت سووندکلود",
+"title_en": "gift soundcloud",
+"description": "lorem ...",
+"period": "4",
+"period_title": "چهار ماهه",
+"price": "100"
+},
+{
+"brand_id": 1,
+"category_id": 1,
+"title": "گیفت کارت اسپاتیفای",
+"title_en": "gift spotify",
+"description": "lorem ...",
+"period": "6",
+"period_title": "6 ماهه",
+"price": "320"
+}
+]
+}
+
+
+,
+
+
+Banner
+{
+"data": [
+{
+"id": 1,
+"title": "گیفت کارت نتفلیکس",
+"description": "استریم موزیک",
+"link": "http://prohaska.biz/est2",
+"color_from": "#E50914",
+"color_main": "#1A1E29",
+"color_to": "#132D46",
+"logo_name": "netflix-text-logo",
+"logo": "https://nimaheidari.storage.iran.liara.space/images/netflix-logo-banner.png"
+},
+{
+"id": 2,
+"title": "گیفت کارت اسپاتیفای",
+"description": "استریم موزیک",
+"link": "http://mante.net/iste-numquam-sequi-molestias-eligendi-nisi-ut-culpa.html",
+"color_from": "#1ED760",
+"color_main": "#1A1E29",
+"color_to": "#132D46",
+"logo_name": "netflix-text-logo",
+"logo": "https://nimaheidari.storage.iran.liara.space/images/spotify-logo-banner.png"
+},
+{
+"id": 3,
+"title": "گیفت کارت سوندکلود",
+"description": "استریم موزیک",
+"link": "http://prohaska.biz/est-distinctio-occaecati-sed-animi-totam-dolor",
+"color_from": "#CA4B14",
+"color_main": "#1A1E29",
+"color_to": "#132D46",
+"logo_name": "soundcloud-logo",
+"logo": "https://nimaheidari.storage.iran.liara.space/images/soundcloud-logo-banner.png"
+}
+]
+}
+
+,
+
+
