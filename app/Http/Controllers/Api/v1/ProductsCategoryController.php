@@ -14,16 +14,16 @@ class ProductsCategoryController extends Controller
     /**
      * Handle the incoming request.
      */
-    public function __invoke(Request $request,Category $category)
+    public function index(Request $request,Category $category)
     {
-        return        CategoryProductResource::collection(Category::with(['products'])->where("categories.id",$category->id)->get());
+        return    CategoryProductResource::collection(Category::with(['products'])->where("categories.id",$category->id)->get());
 
 //        return        $category->products()->get();
 //        return             (Category::with(['products'])->where("categories.id",$category->id)->get());
-        return (
-            Category::with(['products'])->where("categories.id",$category->id)
-//        $category->products()->get()
-        );
+//        return (
+//            Category::with(['products'])->where("categories.id",$category->id)
+////        $category->products()->get()
+//        );
 
     }
 }
